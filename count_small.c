@@ -12,6 +12,7 @@ int check_permissions(char *ls_permission, char *required_permission) {
 
 int main(int argc, char **argv) {
     if (argc <= 1 || argc >= 4) {
+        // permission format: rwxrwxrwx
         fprintf(stderr, "USAGE: count_samll size [permissions]\n");
         return 1;
     }
