@@ -21,6 +21,7 @@ int main(int argc, char **argv) {
     if (argc == 2) {
         upper_limit = strtol(argv[1], NULL, 10);
     } else if (argc == 3) {
+        upper_limit = strtol(argv[1], NULL, 10);
         filter_flag = 1;
         required_permission = argv[2];
     }
